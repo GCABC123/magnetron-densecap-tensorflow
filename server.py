@@ -83,7 +83,7 @@ def caption(sess, inp):
     pos_captions = [sentence(vocab, captions[idx]) for idx in keep]
     pos_boxes = boxes[keep, :]
     results = []
-    for captiton in pos_captions:
+    for i in range(len(pos_captions)):
         results.append({
             'bbox': pos_boxes[i],
             'class': pos_captions[i],
