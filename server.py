@@ -73,7 +73,8 @@ caption_outputs = {
 @runway.command('caption', inputs={'image': runway.image}, outputs=caption_outputs)
 def caption(sess, inp):
     img = np.array(inp['image'])
-    height, width = img.shape
+    width = img.shape[1]
+    height = img.shape[0]
     scores, boxes, captions = im_detect(sess, net, img, None, use_box_at=-1)
     pos_dets = np.hstack((boxes, scores[:, np.newaxis])).astype(np.float32, copy=False)
     keep = nms(pos_dets, cfg.TEST.NMS)
