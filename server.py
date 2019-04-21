@@ -97,7 +97,7 @@ def caption(sess, inp):
     results = []
     for i in range(min(inp['max_detections'], len(pos_captions))):
         results.append({
-            'bbox': [convert_rect(box) for box in pos_boxes[i].tolist()],
+            'bbox': convert_rect(box),
             'class': pos_captions[i],
             'score': float(pos_scores[i])
         })
