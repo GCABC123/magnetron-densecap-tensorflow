@@ -85,9 +85,9 @@ def caption(sess, inp):
     results = []
     for i in range(len(pos_captions)):
         results.append({
-            'bbox': pos_boxes[i],
+            'bbox': pos_boxes[i].tolist(),
             'class': pos_captions[i],
-            'score': pos_scores[i]
+            'score': float(pos_scores[i])
         })
     return dict(results=results, size={ 'width': width, 'height': height })
 
