@@ -64,13 +64,17 @@ def setup():
 
     return sess
 
+caption_inputs = {
+    'image': runway.image,
+    'max_detections': runway.number(default=10, min=1, max=50, step=1)
+}
 
 caption_outputs = {
     'results': runway.any,
     'size': runway.any
 }
 
-@runway.command('caption', inputs={'image': runway.image}, outputs=caption_outputs)
+@runway.command('caption', inputs=caption_inputs, outputs=caption_outputs)
 def caption(sess, inp):
     img = np.array(inp['image'])
     width = img.shape[1]
@@ -83,7 +87,7 @@ def caption(sess, inp):
     pos_captions = [sentence(vocab, captions[idx]) for idx in keep]
     pos_boxes = boxes[keep, :]
     results = []
-    for i in range(len(pos_captions)):
+    for i in range(min(inp['max_detections'], len(pos_captions))):
         results.append({
             'bbox': pos_boxes[i].tolist(),
             'class': pos_captions[i],
