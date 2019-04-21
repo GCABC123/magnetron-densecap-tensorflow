@@ -64,6 +64,14 @@ def setup():
 
     return sess
 
+def convert_rect(rect):
+    x = rect[0]
+    y = rect[1]
+    w = rect[2] - x
+    h = rect[3] - y
+    return x, y, w, h
+  
+
 caption_inputs = {
     'image': runway.image,
     'max_detections': runway.number(default=10, min=1, max=50, step=1)
@@ -89,7 +97,7 @@ def caption(sess, inp):
     results = []
     for i in range(min(inp['max_detections'], len(pos_captions))):
         results.append({
-            'bbox': pos_boxes[i].tolist(),
+            'bbox': [convert_rect(box) for box in pos_boxes[i].tolist()],
             'class': pos_captions[i],
             'score': float(pos_scores[i])
         })
