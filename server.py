@@ -65,9 +65,15 @@ def setup():
     return sess
 
 
-@runway.command('caption', inputs={'image': runway.image}, outputs={'captions': runway.vector(12), 'scores': runway.vector(12), 'boxes': runway.vector(12)})
+caption_outputs = {
+    'results': runway.any,
+    'size': runway.any
+}
+
+@runway.command('caption', inputs={'image': runway.image}, outputs=caption_outputs)
 def caption(sess, inp):
     img = np.array(inp['image'])
+    height, width = np_arr.shape
     scores, boxes, captions = im_detect(sess, net, img, None, use_box_at=-1)
     pos_dets = np.hstack((boxes, scores[:, np.newaxis])).astype(np.float32, copy=False)
     keep = nms(pos_dets, cfg.TEST.NMS)
@@ -75,7 +81,14 @@ def caption(sess, inp):
     pos_scores = scores[keep]
     pos_captions = [sentence(vocab, captions[idx]) for idx in keep]
     pos_boxes = boxes[keep, :]
-    return dict(captions=np.array(pos_captions), scores=np.array(pos_scores), boxes=np.array(pos_boxes))
+    results = []
+    for captiton in pos_captions:
+        results.append({
+            'bbox': pos_boxes[i],
+            'class': pos_captions[i],
+            'score': pos_scores[i]
+        })
+    return dict(results=results, size={ 'width': width, 'height': height })
 
 
 if __name__ == '__main__':
