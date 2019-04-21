@@ -1,0 +1,9 @@
+python: 3.6
+cuda: 9.0
+entrypoint: python server.py
+framework: tensorflow
+build_steps:
+  - apt update && apt install -y libsm6 libxext6 libxrender-dev wget
+  - pip install -r requirements.txt
+  - cd lib && make && cd ..
+  - mkdir -p output/ckpt && cd output/ckpt && wget https://s3.amazonaws.com/runway-checkpoints/densecap_checkpoint.tar.gz && tar xf densecap_checkpoint.tar.gz && rm densecap_checkpoint.tar.gz && cd ../..

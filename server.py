@@ -35,10 +35,8 @@ from lib.fast_rcnn.nms_wrapper import nms
 import runway
 
 
-
-
-@runway.setup(options={'checkpoint_path':runway.text})
-def setup(options):
+@runway.setup
+def setup():
     global net, vocab
     ckpt_dir = 'output/ckpt/'
     vocabulary = 'output/ckpt/vocabulary.txt'
