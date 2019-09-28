@@ -2,6 +2,9 @@ python: 3.6
 cuda: 9.0
 entrypoint: python server.py
 framework: tensorflow
+files:
+  ignore:
+    - output/*
 spec:
   gpu: True
   cpu: False

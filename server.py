@@ -64,11 +64,11 @@ def setup():
 
     return sess
 
-def convert_rect(rect):
-    x = rect[0]
-    y = rect[1]
-    w = rect[2] - x
-    h = rect[3] - y
+def convert_rect(rect, width, height):
+    x = rect[0] / width
+    y = rect[1] / height
+    w = rect[2] / width
+    h = rect[3] / height
     return x, y, w, h
   
 
@@ -78,8 +78,9 @@ caption_inputs = {
 }
 
 caption_outputs = {
-    'results': runway.any,
-    'size': runway.any
+    'bboxes': runway.array(runway.image_bounding_box),
+    'classes': runway.array(runway.text),
+    'scores': runway.array(runway.number)
 }
 
 @runway.command('caption', inputs=caption_inputs, outputs=caption_outputs)
@@ -94,14 +95,14 @@ def caption(sess, inp):
     pos_scores = scores[keep]
     pos_captions = [sentence(vocab, captions[idx]) for idx in keep]
     pos_boxes = boxes[keep, :]
-    results = []
+    bboxes = []
+    classes = []
+    scores = []
     for i in range(min(inp['max_detections'], len(pos_captions))):
-        results.append({
-            'bbox': convert_rect(pos_boxes[i]),
-            'class': pos_captions[i],
-            'score': float(pos_scores[i])
-        })
-    return dict(results=results, size={ 'width': width, 'height': height })
+        bboxes.append(convert_rect(pos_boxes[i], width, height))
+        classes.append(pos_captions[i])
+        scores.append(float(pos_scores[i]))
+    return dict(bboxes=bboxes, classes=classes, scores=scores)
 
 
 if __name__ == '__main__':
