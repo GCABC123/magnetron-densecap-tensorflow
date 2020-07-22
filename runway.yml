@@ -1,5 +1,6 @@
 python: 3.6
 cuda: 9.0
+cuda_flavor: devel
 entrypoint: python server.py
 framework: tensorflow
 files:
