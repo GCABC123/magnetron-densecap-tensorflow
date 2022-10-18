@@ -89,7 +89,6 @@ Implementation of CVPR2017 paper: [Dense captioning with joint inference and vis
     <img src="./logs/densecap.png" width="40%" height="40%">
 </div>
 
-**Special thanks to [valohai](https://valohai.com/) for offering computing resource.**
 
 ## Note
 
