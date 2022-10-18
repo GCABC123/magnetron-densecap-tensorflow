@@ -39,8 +39,12 @@ REQUIREMENTS:
 
 
 =============================================================
+
 Dense captioning is a computer vision topic for understanding images with dense language descriptions. The goal is to densely detect visual concepts (e.g., objects, object parts, and interactions between them) from images, labeling each with a short descriptive phrase. This can be used to Generate sentence description of images (with LOGIC).
 
+🌐 NOTE: **OBJECTS** are oftn associated with **noun** text **SYMBOLS**. (SEE 𝗔𝗥𝗧𝗜𝗙𝗜𝗖𝗜𝗔𝗟 𝗜𝗡𝗧𝗘𝗟𝗟𝗜𝗚𝗘𝗡𝗖𝗘 𝟮.𝟬 ™ DOCUMENTATION). 
+
+🌐 NOTE: **INTERACTIONS** between **OBJECTS** are often associated with **verb** text **SYMBOLS**. (SEE 𝗔𝗥𝗧𝗜𝗙𝗜𝗖𝗜𝗔𝗟 𝗜𝗡𝗧𝗘𝗟𝗟𝗜𝗚𝗘𝗡𝗖𝗘 𝟮.𝟬 ™ DOCUMENTATION). 
 
 e.g This ASTRAL MIND MINDCLOUD PROXIA can be used to process INFORMATION from the real world via the eye cameras and then send information about the IMAGE  to the IMAGINATION proxia on ASTRAL MINDCLOUD for the robot to IMAGINE it in different scenarios to better understand what it is and how people see it. 
 
