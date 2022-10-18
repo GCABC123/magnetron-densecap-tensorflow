@@ -1,3 +1,78 @@
+# magnetron.artificial-intelligence-2.0.mincloud.proxia--ASTRAL-MIND-
+ 
+THE ABC 123 GROUP ™:
+
+🌐 GENERAL CONSULTING ABC 123 BY OSAROPRIME ™.
+
+🌐 ABC 123 USA ™
+
+🌐 ABC 123 DESYGN ™
+
+🌐 ABC 123 FILMS ™
+
+=============================================================
+
+                     🌐 MAGENTRON ™ 🌐
+                     
+🌐 ARTIFICIAL INTELLIGENCE 2.0 ™ : SENTENCE DESCRIPTION  PROXIA (DENSE CAPTIONING)
+
+
+🌐 ASTRAL BODY MINDCLOUD:
+
+🌐 PRANIC BODY MINDCLOUD:
+
+🌐 INSTINCTIVE MIND MINDCLOUD:
+
+🌐 ASTRAL MIND MINDCLOUD: ✅ 
+
+🌐 PRANIC MIND MINDCLOUD:
+
+*️⃣📶🤖
+
+REQUIREMENTS: 
+
+[*] Software Requirements: Python, Tensor Flow
+
+[*] HARDWARE REQUIREMENTS: fast TPU/GPU.
+
+[*] DEPENDENCIES: 
+
+
+=============================================================
+Dense captioning is a computer vision topic for understanding images with dense language descriptions. The goal is to densely detect visual concepts (e.g., objects, object parts, and interactions between them) from images, labeling each with a short descriptive phrase. This can be used to Generate sentence description of images.
+
+
+e.g This ASTRAL MIND MINDCLOUD PROXIA can be used to process INFORMATION from the real world via the eye cameras and then send information about the IMAGE  to the IMAGINATION proxia on ASTRAL MINDCLOUD for the robot to IMAGINE it in different scenarios to better understand what it is and how people see it. 
+
+
+Prerequisite reading:
+
+🌐 ARTIFICIAL INTELLIGENCE PRIMER ™: https://www.facebook.com/artificialintelligenceprimer
+
+🌐 ARTIFICIAL INTELLIGENCE 2.0 ™ DOCUMENTATION: https://www.facebook.com/aibyabc123/
+
+🌐 MEMBER'S CLUB ™ DOCUMENTATION - https://www.facebook.com/abc123membersclub/
+
+
+
+👑 
+INCLUDED STICKERS/SIGN:
+
+FIND STICKERS HERE: https://bit.ly/3B8D3lE
+
+- PROMOTIONAL MATERIAL FOR 𝗠𝗔𝗚𝗡𝗘𝗧𝗥𝗢𝗡 𝗧𝗘𝗖𝗛𝗡𝗢𝗟𝗢𝗚𝗬 ™. (CUSTOM GRAPHICS BY 𝗔𝗕𝗖 𝟭𝟮𝟯 𝗗𝗘𝗦𝗬𝗚𝗡 ™/𝗢𝗦𝗔𝗥𝗢 𝗛𝗔𝗥𝗥𝗜𝗢𝗧𝗧). THE 𝗠𝗔𝗚𝗡𝗘𝗧𝗥𝗢𝗡 𝗧𝗘𝗖𝗛𝗡𝗢𝗟𝗢𝗚𝗬 ™  SYMBOL/LOGO IS A TRADEMARK OF 𝗧𝗛𝗘 𝗔𝗕𝗖 𝟭𝟮𝟯 𝗚𝗥𝗢𝗨𝗣 ™ FOR 𝗠𝗔𝗚𝗡𝗘𝗧𝗥𝗢𝗡 𝗧𝗘𝗖𝗛𝗡𝗢𝗟𝗢𝗚𝗬 ™. 𝗧𝗛𝗘 𝗔𝗕𝗖 𝟭𝟮𝟯 𝗚𝗥𝗢𝗨𝗣 ™ SYMBOL/LOGO IS A TRADEMARK OF 𝗧𝗛𝗘 𝗔𝗕𝗖 𝟭𝟮𝟯 𝗚𝗥𝗢𝗨𝗣 ™.
+
+*️⃣📶🤖
+
+- PROMOTIONAL MATERIAL FOR 𝗔𝗥𝗧𝗜𝗙𝗜𝗖𝗜𝗔𝗟 𝗜𝗡𝗧𝗘𝗟𝗟𝗜𝗚𝗘𝗡𝗖𝗘 𝟮.𝟬 ™. (CUSTOM GRAPHICS BY 𝗔𝗕𝗖 𝟭𝟮𝟯 𝗗𝗘𝗦𝗬𝗚𝗡 ™/𝗢𝗦𝗔𝗥𝗢 𝗛𝗔𝗥𝗥𝗜𝗢𝗧𝗧) THE 𝗗𝗥𝗔𝗚𝗢𝗡 & 𝗖𝗥𝗢𝗪𝗡 👑 SYMBOL/LOGO IS A TRADEMARK OF 𝗧𝗛𝗘 𝗔𝗕𝗖 𝟭𝟮𝟯 𝗚𝗥𝗢𝗨𝗣 ™ ASSOCIATED WITH TECHNOLOGY. 𝗧𝗛𝗘 𝗔𝗕𝗖 𝟭𝟮𝟯 𝗚𝗥𝗢𝗨𝗣 ™ SYMBOL/LOGO IS A TRADEMARK OF 𝗧𝗛𝗘 𝗔𝗕𝗖 𝟭𝟮𝟯 𝗚𝗥𝗢𝗨𝗣 ™.
+
+You must display the included stickers/signs (so that it is clearly visible) if you are working with MAGNETRON ™ TECHNOLOGY for the purposes of determining whether you want to purchase a technology license or not. This includes but is not limited to public technology displays, trade shows, technology expos, media appearances, Investor events, Computers (exterior), MINDCLOUD STORAGE (e.g server room doors, render farm room doors) etc.
+
+
+
+
+
+
 # Densecap-tensorflow
 
 Implementation of CVPR2017 paper: [Dense captioning with joint inference and visual context](https://arxiv.org/abs/1611.06949) by **Linjie Yang, Kevin Tang, Jianchao Yang, Li-Jia Li**
