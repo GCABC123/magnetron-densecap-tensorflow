@@ -42,7 +42,7 @@ REQUIREMENTS:
 
 Dense captioning is a computer vision topic for understanding images with dense language descriptions. The goal is to densely detect visual concepts (e.g., objects, object parts, and interactions between them) from images, labeling each with a short descriptive phrase. This can be used to Generate sentence description of images (with LOGIC).
 
-🌐 NOTE: **OBJECTS** are oftn associated with **noun** text **SYMBOLS**. (SEE 𝗔𝗥𝗧𝗜𝗙𝗜𝗖𝗜𝗔𝗟 𝗜𝗡𝗧𝗘𝗟𝗟𝗜𝗚𝗘𝗡𝗖𝗘 𝟮.𝟬 ™ DOCUMENTATION). 
+🌐 NOTE: Detected **OBJECTS** and **OBJECT PARTS** are oftn associated with **noun** text **SYMBOLS**. (SEE 𝗔𝗥𝗧𝗜𝗙𝗜𝗖𝗜𝗔𝗟 𝗜𝗡𝗧𝗘𝗟𝗟𝗜𝗚𝗘𝗡𝗖𝗘 𝟮.𝟬 ™ DOCUMENTATION). 
 
 🌐 NOTE: **INTERACTIONS** between **OBJECTS** are often associated with **verb** text **SYMBOLS**. (SEE 𝗔𝗥𝗧𝗜𝗙𝗜𝗖𝗜𝗔𝗟 𝗜𝗡𝗧𝗘𝗟𝗟𝗜𝗚𝗘𝗡𝗖𝗘 𝟮.𝟬 ™ DOCUMENTATION). 
 
