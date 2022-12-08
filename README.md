@@ -48,6 +48,7 @@ Dense captioning is a computer vision topic for understanding images with dense 
 
 e.g This ASTRAL MIND MINDCLOUD PROXIA can be used to process INFORMATION from the real world via the eye cameras and then send information about the IMAGE  to the IMAGINATION proxia on ASTRAL MINDCLOUD for the robot to IMAGINE it in different scenarios to better understand what it is and how people see it. 
 
+e.g This PROXIA can be used to classify SITUATIONS with LOGIC (in THE ARTIFICIAL INTELLIGENCE 2.0 ™ FRAMEWORK).
 
 Prerequisite reading:
 
